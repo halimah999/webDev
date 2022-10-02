@@ -11,3 +11,105 @@ body {
   font-size: 12px;
   color: #424242;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; 
+}
+
+header,
+nav, 
+footer, 
+section, 
+article, 
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+header
+
+*/
+
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 56px;
+    /*Delete this line*/
+    transition: min-height 0.3s;
+    background-color: darkblue;
+    
+  }
+  
+  .header__inner {
+    color: azure;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header__logo {
+    height: 72px;
+    width:72px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+  }
+  
+  .header__title {
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+  }
+
+  /*
+  nav bar
+  
+  */
+
+  .nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightskyblue;
+  }
+  
+  .nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding:15px 24px;
+    text-transform: uppercase;
+  }
+  
+  .nav a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 1em;
+  }
+  
+   .nav li:hover ,a:hover{
+    font-weight: 700;
+    background-color: #ae3e10;
+    text-decoration: underline;
+    color: azure ;
+  }
