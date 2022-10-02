@@ -107,9 +107,144 @@ header
     padding: 1em;
   }
   
-   .nav li:hover ,a:hover{
+   .nav li:hover ,.nav a:hover{
     font-weight: 700;
     background-color: #ae3e10;
     text-decoration: underline;
     color: azure ;
+  }
+
+  /*
+    Main
+  */
+
+  main {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*
+   *
+   * Content
+   *
+   */
+  
+   .content{
+    display: flex;
+    flex-wrap: wrap;
+   }
+  
+  
+  /*
+   *
+   * main-img
+   *
+   */
+  
+  .main-img {
+    width: 100%;
+    position: relative;
+    background-image: url("./img/main-img.png");
+    background-size: cover;
+    height: 25em;
+  }
+  
+  /*
+     travels
+  
+  */
+  .travels{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  background-color: rgb(199, 202, 202);
+
+  }
+
+  .travels h2{
+    text-align: center;
+    margin: 1.5em;
+  }
+
+  .travels .card{
+    display: flex;
+    justify-content: space-evenly;
+   
+  }
+
+
+
+   .cards img{
+      border:dashed 3px #ab47bc;
+      box-shadow:5px 5px 5px gray;
+      width:20%;
+      margin-left: 3em;
+      cursor:pointer;
+}
+
+.cards span{
+  display: inline-block;
+  margin-left: 3em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+span a{
+  vertical-align: middle;
+}
+
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+ footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  background-color: darkblue;
+}
+
+.fa{
+  color: #E0E0E0;
+  margin-right:5% ;
+}
+
+
+  @media screen and (min-width:600px){
+    .main-img{
+      height: 50em;
+
+    }
+    
+  }
+
+  @media screen and (min-width:800px){
+    .main-img{
+      height: 60em;
+
+    }
+    
+  }
+
+
+  @media screen and (min-width:1000px){
+    .main-img{
+      height: 70em;
+
+    }
+    
+  }
+
+  @media screen and (min-width:1001px){
+    .main-img{
+      height: 80em;
+
+    }
+    
   }
