@@ -48,6 +48,7 @@ header
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
     background-color: darkblue;
     
+    
   }
   
   .header__inner {
@@ -55,21 +56,19 @@ header
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    display:flex;
+    padding:1em;
   }
   
   .header__logo {
-    height: 72px;
-    width:72px;
-    margin-right: 1em;
-    vertical-align: top;
-    margin-top: 12px;
+    height: 3rem;
+    width:3rem;
+
   }
   
   .header__title {
-    font-weight: 300;
-    font-size: 4em;
-    margin: 0.5em 0.25em;
-    display: inline-block;
+    font-size: 3em;
+    padding-left: 0.5em;
   }
 
   /*
@@ -81,7 +80,7 @@ header
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightskyblue;
+    background-color: #2d2dcd;
   }
   
   .nav__list {
@@ -93,7 +92,7 @@ header
   
   .nav__item {
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
   }
   
@@ -101,11 +100,13 @@ header
     display: block;
     text-decoration: none;
     color: #000;
-    padding: 1rem 2rem;
+    color: azure;
+    padding: 0.5rem 2rem;
     font-size: 1.05rem;
-  }
-  
-   .nav li:hover ,.nav a:hover{
+  } 
+
+
+  .nav a:hover{
     font-weight: 700;
     background-color: rgba(170, 163, 163, 0.1);
     border-radius: 10px;
@@ -120,6 +121,9 @@ header
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    min-height: 100%;
+    display:flex;
+    flex-direction:column;
 
   }
   
@@ -235,16 +239,13 @@ header
 design the reviews**/
 
 
-.content .comments{
-  text-align: left;
-}
 
-.comments .head2{
+.content .head2{
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.comments .comments-info {
+.content .comments-info {
   border:1px solid rgb(206, 200, 200);
   border-radius: 5px;
   margin-right: 2rem;
@@ -279,7 +280,7 @@ design the reviews**/
 }
 
 
-.comments .comments-render{
+.content .comments-render{
   display: none;
   flex-direction: column;
   align-items:center;
@@ -287,19 +288,19 @@ design the reviews**/
   max-width: 60%;
   border-radius: 5px;
   background-color: #bbb8b8;
-  margin: 5rem auto;
+  margin: 3rem auto;
 }
 
 .comments-render #form{
-  margin:1% auto;
-  width:70%;
+  margin: 2% auto;
+  width: 80%;
+  padding: 2%;
 }
 
 .form-group .form-control{
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-
 
 .comments-render  .send-item{
   display: block;
@@ -313,6 +314,54 @@ design the reviews**/
 }
 
 /*
+AboutMe personal information 
+
+*/
+
+   .content .personal-info{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+   }
+
+   .personal-info .img-profile, .personal-info .text-profile{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+   }
+
+   .img-profile img{
+
+    margin: auto;
+    width:80%;
+    height:80%;
+  }
+
+   .text-profile h2{
+    font-weight: bold;
+    margin: 2rem;
+
+   }
+
+
+   .text-profile h3{
+    color:darkblue;
+    font-weight: bold;
+    margin-bottom: 2rem;
+   }
+
+   .text-profile p{
+    margin-bottom: 2rem;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+
+   }
+
+
+/*
  * Footer
  */
 
@@ -322,52 +371,63 @@ design the reviews**/
   width: 100%;
   text-align: center;
   background-color: darkblue;
-  position: relative;
-  bottom: 0;
-}
+  margin-top: auto;}
 
 .fa{
   color: #E0E0E0;
   margin-right:5% ;
 } 
 
-
-
-
 /* add breaks */
 @media screen and (min-width:521px){
   .img-card{
-    width:50%;
-  } 
+    width:50%;} 
+
   .cards img:last-of-type{
-    margin-left:0;
-}
-}
+    margin-left:0;}}
+
 @media screen and (min-width:621px){
   .img-card{
-    width:33.3%;
-  } 
+    width:33.3%;} 
+
+
+  
+  
 
 }
 
 @media  screen and (min-width:750px) {
   .info-flight .img-info{
-    max-width: 30%;
-  }
+    max-width: 30%;}
   
   .info-flight .p-info{
     margin: auto;
-
-
     max-width:50%;
   }
   
    .info-flight .a-info{
     margin: auto;
+    max-width:20%;} 
+}
 
-
-    max-width:20%;
-
-   }
+@media screen and (min-width:901px){
   
+    .personal-info .img-profile {
+
+      max-width:60%;
+      order:0;
+     }
+
+     .personal-info .text-profile{
+      margin: auto;
+      max-width:40%;
+      order:-1;
+     }
+
+     .img-profile img{
+
+      width:100%;
+      height:100%;
+    }
+
 }
